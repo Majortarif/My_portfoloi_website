@@ -1,0 +1,32 @@
+TARIFUL HOQUE PORTFOLIO - HOW TO RUN
+=====================================
+
+FIRST TIME (on your computer)
+1. Install Node.js (LTS version, 18 or newer) from https://nodejs.org
+   Check it worked: open a terminal and type   node -v
+2. Unzip this file. Open the folder that has package.json inside it
+   (this folder: "tariful-portfolio").
+3. Open a terminal INSIDE that folder.
+   Windows: open the folder, click the address bar, type  cmd  and press Enter.
+4. Type:   npm install        (wait until it finishes, needs internet)
+5. Type:   npm run dev
+6. Open the link it shows, usually  http://localhost:5173
+
+PUT IT ONLINE (Netlify / Vercel)
+1. In the terminal type:   npm run build      -> this creates a "dist" folder
+2. Netlify: go to https://app.netlify.com/drop and drag the "dist" folder
+   (NOT the whole project folder, and NOT the zip).
+3. Netlify / Vercel from GitHub: upload the FILES INSIDE "tariful-portfolio"
+   (package.json, src, public ...) to the repository root. Build command:
+   npm run build    Output folder: dist
+
+COMMON PROBLEMS
+- "Could not read package.json" / "ENOENT": you are in the wrong folder.
+  Go inside "tariful-portfolio" (the one with package.json) and try again.
+- "Page not found" online: the wrong folder was uploaded. Upload "dist",
+  or make sure package.json is at the top level of the repository.
+- "vite is not recognized": npm install did not finish. Run npm install again.
+- Errors about Node version: install the newest LTS from nodejs.org.
+- Double-clicking index.html will NOT work. Always use  npm run dev.
+
+Change photos, captions and text later:  see README.md
