@@ -1,9 +1,10 @@
-<a href="https://myupdatedportfoloiwebsite.netlify.app/">
-  <img src="docs/banner.webp" width="100%" alt="Tariful Hoque: CSE Graduate, ML and AI, Data Science, UI/UX. Live portfolio at myupdatedportfoloiwebsite.netlify.app">
+<a href="https://mylatestportfoloiwebsite.netlify.app/">
+  <img src="docs/banner.webp" width="100%" alt="Tariful Hoque: CSE Graduate, ML and AI, Data Science, UI/UX. Live portfolio at mylatestportfoloiwebsite.netlify.app">
 </a>
 
 <p align="center">
-  <a href="https://myupdatedportfoloiwebsite.netlify.app/"><img src="https://img.shields.io/badge/LIVE_PORTFOLIO-myupdatedportfoloiwebsite.netlify.app-3EE0FF?style=for-the-badge&logo=netlify&logoColor=white&labelColor=04060B" alt="Live portfolio"></a>
+  <a href="https://mylatestportfoloiwebsite.netlify.app/"><img src="https://img.shields.io/badge/LIVE_PORTFOLIO-mylatestportfoloiwebsite.netlify.app-3EE0FF?style=for-the-badge&logo=netlify&logoColor=white&labelColor=04060B" alt="Live portfolio"></a>
+  <a href="https://mylatestportfoloiwebsite.netlify.app/experience.html"><img src="https://img.shields.io/badge/ENTER_THE_3D_FOREST-Three.js_trail-4ADE80?style=for-the-badge&logo=threedotjs&logoColor=white&labelColor=04060B" alt="Enter the 3D forest"></a>
 </p>
 
 <p align="center">
@@ -20,7 +21,7 @@
 
 <p align="center">
   <b>
-  <a href="https://myupdatedportfoloiwebsite.netlify.app/">Open the site</a> ·
+  <a href="https://mylatestportfoloiwebsite.netlify.app/">Open the site</a> ·
   <a href="#-the-signal-forest-3d">3D forest</a> ·
   <a href="#-highlights">Highlights</a> ·
   <a href="#-screenshots">Screenshots</a> ·
@@ -43,9 +44,9 @@ Everything is hand-written **HTML, CSS and vanilla JavaScript**: no framework, n
 
 > A portfolio should feel less like a résumé and more like an experience.
 
-Press **Enter the 3D forest** on the hero (or open [`experience.html`](https://myupdatedportfoloiwebsite.netlify.app/experience.html)) and walk a night trail through ten stops: a trailhead gate, the *Roots* tree (education), the Air Quality radar grove, a DocuSense embedding cloud, the AgriCycle field, a workshop of product screens, the YSSE basecamp fire, orbiting skill families, a clearing of photos and a portal to contact.
+Press **Enter the 3D forest** on the hero (or open [`experience.html`](https://mylatestportfoloiwebsite.netlify.app/experience.html)) and walk a night trail through ten stops: a trailhead gate, the *Roots* tree (education), the Air Quality radar grove, a DocuSense embedding cloud, the AgriCycle field, a workshop of product screens, the YSSE basecamp fire, orbiting skill families, a clearing of photos and a portal to contact.
 
-<a href="https://myupdatedportfoloiwebsite.netlify.app/experience.html"><img src="docs/screenshots/forest.webp" width="100%" alt="Four stops of the 3D forest: the trailhead gate, the air-quality radar grove, the YSSE campfire and the contact portal."></a>
+<a href="https://mylatestportfoloiwebsite.netlify.app/experience.html"><img src="docs/screenshots/forest.webp" width="100%" alt="Four stops of the 3D forest: the trailhead gate, the air-quality radar grove, the YSSE campfire and the contact portal."></a>
 
 | | |
 |---|---|
@@ -183,7 +184,7 @@ Edit the files in `js/data/`; the page updates automatically.
 
 **Tariful Hoque**: CSE Graduate | Machine Learning & AI | Data Science | UI/UX
 
-[![Portfolio](https://img.shields.io/badge/Portfolio-3EE0FF?style=for-the-badge&logo=googlechrome&logoColor=04060B)](https://myupdatedportfoloiwebsite.netlify.app/)
+[![Portfolio](https://img.shields.io/badge/Portfolio-3EE0FF?style=for-the-badge&logo=googlechrome&logoColor=04060B)](https://mylatestportfoloiwebsite.netlify.app/)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/tariful-hoque-582321259/)
 [![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Majortarif)
 [![Email](https://img.shields.io/badge/Email-tarifulhoque347%40gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:tarifulhoque347@gmail.com)
