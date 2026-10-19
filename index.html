@@ -1,40 +1,489 @@
 <!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<html lang="en" class="no-js">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Tariful Hoque — CSE Graduate · ML &amp; AI · Data Science · UI/UX</title>
+  <meta name="description" content="Tariful Hoque is a CSE graduate from East West University, Dhaka, and an IT Intern in the AI Integration &amp; Cybersecurity wing at YSSE. Machine learning, RAG, data science and UI/UX: projects, experience, gallery and contact." />
+  <meta name="author" content="Tariful Hoque" />
+  <meta name="theme-color" content="#04060b" />
+  <meta name="color-scheme" content="dark" />
+  <link rel="canonical" href="https://myportfoloiwebsite.netlify.app/" />
 
-    <title>Tariful Hoque | AI/ML, Data Analysis & Digital Marketing</title>
-    <meta
-      name="description"
-      content="Computer Science graduate specializing in AI/ML, data analysis, Explainable AI, digital marketing, UI/UX, and AI-assisted content creation."
-    />
+  <!-- Open Graph / social -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Tariful Hoque" />
+  <meta property="og:title" content="Tariful Hoque — CSE Graduate · ML &amp; AI · Data Science · UI/UX" />
+  <meta property="og:description" content="CSE graduate and IT Intern (AI Integration &amp; Cybersecurity, YSSE) building ML models, RAG services and data-driven products." />
+  <meta property="og:url" content="https://myportfoloiwebsite.netlify.app/" />
+  <meta property="og:image" content="https://myportfoloiwebsite.netlify.app/assets/img/og-image.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Tariful Hoque — CSE Graduate, ML &amp; AI, Data Science, UI/UX" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Tariful Hoque — CSE Graduate · ML &amp; AI · Data Science · UI/UX" />
+  <meta name="twitter:description" content="CSE graduate and IT Intern (AI Integration &amp; Cybersecurity, YSSE) building ML models, RAG services and data-driven products." />
+  <meta name="twitter:image" content="https://myportfoloiwebsite.netlify.app/assets/img/og-image.jpg" />
 
-    <!-- Open Graph -->
-    <meta property="og:type" content="website" />
-    <meta property="og:title" content="Tariful Hoque | AI/ML, Data Analysis & Digital Marketing" />
-    <meta
-      property="og:description"
-      content="Computer Science graduate specializing in AI/ML, data analysis, Explainable AI, digital marketing, UI/UX, and AI-assisted content creation."
-    />
-    <meta property="og:site_name" content="Tariful Hoque" />
+  <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml" />
+  <link rel="icon" href="assets/icons/favicon-32.png" sizes="32x32" type="image/png" />
+  <link rel="apple-touch-icon" href="assets/icons/apple-touch-icon.png" />
+  <link rel="manifest" href="site.webmanifest" />
 
-    <meta name="twitter:card" content="summary" />
-    <meta name="twitter:title" content="Tariful Hoque | AI/ML, Data Analysis & Digital Marketing" />
-    <meta
-      name="twitter:description"
-      content="Computer Science graduate specializing in AI/ML, data analysis, Explainable AI, digital marketing, UI/UX, and AI-assisted content creation."
-    />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <!-- Fonts load without blocking rendering; text shows in a system font until they arrive -->
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Geist:wght@300..700&amp;family=Geist+Mono:wght@400;500&amp;family=Instrument+Serif:ital@0;1&amp;display=swap" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@300..700&amp;family=Geist+Mono:wght@400;500&amp;family=Instrument+Serif:ital@0;1&amp;display=swap" media="print" onload="this.media='all'" />
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@300..700&amp;family=Geist+Mono:wght@400;500&amp;family=Instrument+Serif:ital@0;1&amp;display=swap" /></noscript>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/layout.css" />
+  <link rel="stylesheet" href="css/components.css" />
+  <link rel="stylesheet" href="css/sections.css" />
+  <link rel="stylesheet" href="css/motion.css" />
+  <link rel="stylesheet" href="css/sonar.css" />
+
+  <script>document.documentElement.classList.replace('no-js', 'js');</script>
+  <script type="module" src="js/main.js"></script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Tariful Hoque",
+    "url": "https://myportfoloiwebsite.netlify.app/",
+    "image": "https://myportfoloiwebsite.netlify.app/assets/img/og-image.jpg",
+    "email": "mailto:tarifulhoque347@gmail.com",
+    "jobTitle": "CSE Graduate — Machine Learning & AI, Data Science, UI/UX",
+    "alumniOf": { "@type": "CollegeOrUniversity", "name": "East West University", "address": "Dhaka, Bangladesh" },
+    "address": { "@type": "PostalAddress", "addressLocality": "Dhaka", "addressCountry": "BD" },
+    "knowsAbout": ["Machine Learning", "Retrieval-Augmented Generation", "Data Science", "IoT", "Python", "FastAPI", "JavaScript", "UI/UX Design", "Figma"],
+    "sameAs": [
+      "https://www.linkedin.com/in/tariful-hoque-582321259/",
+      "https://github.com/Majortarif"
+    ]
+  }
+  </script>
+</head>
+
+<body>
+  <!-- Icon sprite (Lucide-style, 24px grid, stroke icons) -->
+  <svg class="sprite" aria-hidden="true" focusable="false">
+    <symbol id="i-github" viewBox="0 0 24 24"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.4 5.4 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></symbol>
+    <symbol id="i-linkedin" viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></symbol>
+    <symbol id="i-arrow-up-right" viewBox="0 0 24 24"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></symbol>
+    <symbol id="i-arrow-right" viewBox="0 0 24 24"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></symbol>
+    <symbol id="i-arrow-up" viewBox="0 0 24 24"><path d="m5 12 7-7 7 7"/><path d="M12 19V5"/></symbol>
+    <symbol id="i-arrow-down" viewBox="0 0 24 24"><path d="M12 5v14"/><path d="m19 12-7 7-7-7"/></symbol>
+    <symbol id="i-download" viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="m7 10 5 5 5-5"/><path d="M12 15V3"/></symbol>
+    <symbol id="i-copy" viewBox="0 0 24 24"><rect width="14" height="14" x="8" y="8" rx="2"/><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></symbol>
+    <symbol id="i-x" viewBox="0 0 24 24"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></symbol>
+    <symbol id="i-chevron-left" viewBox="0 0 24 24"><path d="m15 18-6-6 6-6"/></symbol>
+    <symbol id="i-chevron-right" viewBox="0 0 24 24"><path d="m9 18 6-6-6-6"/></symbol>
+    <symbol id="i-map-pin" viewBox="0 0 24 24"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></symbol>
+    <symbol id="i-graduation" viewBox="0 0 24 24"><path d="M22 10 12 5 2 10l10 5 10-5Z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/><path d="M22 10v6"/></symbol>
+    <symbol id="i-globe" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></symbol>
+    <symbol id="i-award" viewBox="0 0 24 24"><circle cx="12" cy="8" r="6"/><path d="M15.48 12.89 17 22l-5-3-5 3 1.52-9.11"/></symbol>
+    <symbol id="i-users" viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></symbol>
+    <symbol id="i-presentation" viewBox="0 0 24 24"><path d="M2 3h20"/><path d="M21 3v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V3"/><path d="m7 21 5-5 5 5"/></symbol>
+    <symbol id="i-activity" viewBox="0 0 24 24"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></symbol>
+    <symbol id="i-folder" viewBox="0 0 24 24"><path d="M20 20a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.9a2 2 0 0 1-1.69-.9L9.6 3.9A2 2 0 0 0 7.93 3H4a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2Z"/></symbol>
+    <symbol id="i-file" viewBox="0 0 24 24"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"/><path d="M14 2v4a2 2 0 0 0 2 2h4"/><path d="M16 13H8"/><path d="M16 17H8"/><path d="M10 9H8"/></symbol>
+    <symbol id="i-send" viewBox="0 0 24 24"><path d="m22 2-7 20-4-9-9-4Z"/><path d="M22 2 11 13"/></symbol>
+    <symbol id="i-play" viewBox="0 0 24 24"><polygon points="6 3 20 12 6 21 6 3"/></symbol>
+    <symbol id="i-shield" viewBox="0 0 24 24"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/></symbol>
+    <symbol id="i-image" viewBox="0 0 24 24"><rect width="18" height="18" x="3" y="3" rx="2"/><circle cx="9" cy="9" r="2"/><path d="m21 15-3.09-3.09a2 2 0 0 0-2.82 0L6 21"/></symbol>
+    <symbol id="i-terminal" viewBox="0 0 24 24"><path d="m4 17 6-6-6-6"/><path d="M12 19h8"/></symbol>
+  </svg>
+
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="scroll-progress" aria-hidden="true"><span></span></div>
+  <div class="cursor" aria-hidden="true"><span class="cursor__label"></span></div>
+
+  <!-- ============================== Header / navigation -->
+  <header class="site-header" data-header>
+    <div class="container site-header__inner">
+      <a class="brand" href="#top" aria-label="Tariful Hoque, back to top" data-magnetic>
+        <span class="brand__mark" aria-hidden="true">TH</span>
+        <span class="brand__name">Tariful Hoque</span>
+      </a>
+
+      <nav class="nav" aria-label="Primary">
+        <ul class="nav__list" data-nav>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#achievements">Achievements</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <span class="nav__indicator" aria-hidden="true"></span>
+      </nav>
+
+      <a class="btn btn--ghost btn--sm site-header__cv" href="assets/cv/Tariful_Hoque_CV.pdf" download data-magnetic>
+        <span class="btn__label">Download CV</span>
+        <svg class="icon icon--y" aria-hidden="true"><use href="#i-download"/></svg>
+      </a>
+
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-menu" data-menu-toggle>
+        <span class="sr-only">Open menu</span>
+        <span class="menu-toggle__bars" aria-hidden="true"><i></i><i></i></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile menu -->
+  <div class="mobile-menu" id="mobile-menu" data-mobile-menu hidden>
+    <nav class="container mobile-menu__inner" aria-label="Mobile">
+      <ol class="mobile-menu__list">
+        <li><a href="#about"><span>01</span>About</a></li>
+        <li><a href="#skills"><span>02</span>Skills</a></li>
+        <li><a href="#projects"><span>03</span>Projects</a></li>
+        <li><a href="#experience"><span>04</span>Experience</a></li>
+        <li><a href="#education"><span>05</span>Education</a></li>
+        <li><a href="#achievements"><span>06</span>Achievements</a></li>
+        <li><a href="#gallery"><span>07</span>Gallery</a></li>
+        <li><a href="#contact"><span>08</span>Contact</a></li>
+      </ol>
+      <div class="mobile-menu__foot">
+        <a class="btn btn--primary" href="assets/cv/Tariful_Hoque_CV.pdf" download>
+          <span class="btn__label">Download CV</span>
+          <svg class="icon icon--y" aria-hidden="true"><use href="#i-download"/></svg>
+        </a>
+        <ul class="social-row" aria-label="Profiles">
+          <li><a class="icon-link" href="https://www.linkedin.com/in/tariful-hoque-582321259/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn (opens in a new tab)"><svg class="icon" aria-hidden="true"><use href="#i-linkedin"/></svg></a></li>
+          <li><a class="icon-link" href="https://github.com/Majortarif" target="_blank" rel="noopener noreferrer" aria-label="GitHub (opens in a new tab)"><svg class="icon" aria-hidden="true"><use href="#i-github"/></svg></a></li>
+          <li><a class="icon-link" href="mailto:tarifulhoque347@gmail.com" aria-label="Email tarifulhoque347@gmail.com"><svg class="icon" aria-hidden="true"><use href="#i-mail"/></svg></a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+
+  <main id="main">
+    <!-- ============================== Hero -->
+    <section class="hero" id="top" aria-labelledby="hero-title">
+      <canvas class="hero__field" data-hero-field aria-hidden="true"></canvas>
+      <div class="hero__grid" aria-hidden="true"></div>
+      <div class="hero__glow" aria-hidden="true"></div>
+      <div class="hero__scanline" aria-hidden="true"></div>
+
+      <div class="radar" aria-hidden="true">
+        <div class="radar__disc">
+          <span class="radar__ring" style="--r:1"></span>
+          <span class="radar__ring" style="--r:0.75"></span>
+          <span class="radar__ring" style="--r:0.5"></span>
+          <span class="radar__ring" style="--r:0.25"></span>
+          <span class="radar__cross"></span>
+          <span class="radar__sweep"></span>
+          <span class="radar__pulse"></span>
+          <span class="radar__pulse" style="--p:1"></span>
+          <span class="radar__pulse" style="--p:2"></span>
+          <span class="radar__blip" style="--a:34;--d:0.72">ML</span>
+          <span class="radar__blip" style="--a:82;--d:0.46">RAG</span>
+          <span class="radar__blip" style="--a:128;--d:0.8">IoT</span>
+          <span class="radar__blip" style="--a:176;--d:0.58">Python</span>
+          <span class="radar__blip" style="--a:222;--d:0.84">Data</span>
+          <span class="radar__blip" style="--a:268;--d:0.4">FastAPI</span>
+          <span class="radar__blip" style="--a:312;--d:0.7">UI/UX</span>
+          <span class="radar__core"></span>
+        </div>
+        <p class="radar__hud radar__hud--tl">SCAN.MODE <b>ACTIVE</b></p>
+        <p class="radar__hud radar__hud--tr">23.81°N · 90.41°E</p>
+        <p class="radar__hud radar__hud--bl">FREQ 40 kHz · 7 TARGETS</p>
+        <p class="radar__hud radar__hud--br">LOCK: AI/ML ROLE</p>
+      </div>
+
+      <div class="container hero__inner">
+        <p class="hero__status" data-intro style="--d: 0">
+          <span class="status-dot" aria-hidden="true"></span>
+          <span>IT Intern @ YSSE<span class="hero__sep" aria-hidden="true">/</span>Open to AI/ML roles<span class="hero__loc"><span class="hero__sep" aria-hidden="true">/</span>Dhaka</span></span>
+        </p>
+
+        <h1 class="hero__title" id="hero-title">
+          <span class="hero__line" data-split="chars" data-intro-split style="--d: 1">Tariful</span>
+          <span class="hero__line hero__line--serif" data-split="chars" data-intro-split style="--d: 3">Hoque</span>
+        </h1>
+
+        <p class="hero__role" data-intro style="--d: 6">
+          CSE Graduate <i aria-hidden="true">·</i> ML &amp; AI <i aria-hidden="true">·</i> Data Science <i aria-hidden="true">·</i> UI/UX
+        </p>
+
+        <p class="hero__lede" data-intro style="--d: 7">
+          Computer Science graduate focused on Machine Learning, Data Analysis and emerging AI technologies.
+          I turn data and technology into practical solutions for real-world problems.
+        </p>
+
+        <p class="hero__cycle" data-intro style="--d: 7.5">
+          <span class="hero__prompt" aria-hidden="true">&gt;_</span><span>currently</span><span class="hero__cycle-word" data-cycle="interning in AI &amp; Cybersecurity at YSSE|building grounded RAG services|shipping ML models to the browser|designing bilingual বাংলা / EN apps|open to AI/ML roles">interning in AI &amp; Cybersecurity at YSSE</span><span class="hero__caret" aria-hidden="true"></span>
+        </p>
+
+        <div class="hero__cta">
+          <div class="hero__actions" data-intro style="--d: 8">
+            <a class="btn btn--primary" href="#projects" data-magnetic>
+              <span class="btn__label">View projects</span>
+              <svg class="icon icon--y" aria-hidden="true"><use href="#i-arrow-down"/></svg>
+            </a>
+            <a class="btn btn--ghost" href="assets/cv/Tariful_Hoque_CV.pdf" download data-magnetic>
+              <span class="btn__label">Download CV</span>
+              <svg class="icon icon--y" aria-hidden="true"><use href="#i-download"/></svg>
+            </a>
+            <a class="btn btn--text" href="#contact" data-magnetic>
+              <span class="btn__label">Contact me</span>
+              <svg class="icon icon--x" aria-hidden="true"><use href="#i-arrow-right"/></svg>
+            </a>
+          </div>
+
+          <ul class="social-row hero__social" aria-label="Profiles" data-intro style="--d: 9">
+            <li><a class="icon-link" href="https://www.linkedin.com/in/tariful-hoque-582321259/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn (opens in a new tab)" data-magnetic><svg class="icon" aria-hidden="true"><use href="#i-linkedin"/></svg></a></li>
+            <li><a class="icon-link" href="https://github.com/Majortarif" target="_blank" rel="noopener noreferrer" aria-label="GitHub (opens in a new tab)" data-magnetic><svg class="icon" aria-hidden="true"><use href="#i-github"/></svg></a></li>
+            <li><a class="icon-link" href="mailto:tarifulhoque347@gmail.com" aria-label="Email tarifulhoque347@gmail.com" data-magnetic><svg class="icon" aria-hidden="true"><use href="#i-mail"/></svg></a></li>
+          </ul>
+        </div>
+      </div>
+
+      <aside class="hero__legend" data-intro style="--d: 10" aria-label="About the background animation">
+        <p class="hero__legend-title">// sensor.field</p>
+        <p>Particles carry the <strong>7 sensor readings</strong> of my air-quality model. Move your cursor to see them connect; click anywhere to ping.</p>
+      </aside>
+
+      <a class="hero__scroll" href="#about" data-intro style="--d: 11">
+        <span>Scroll</span>
+        <span class="hero__scroll-line" aria-hidden="true"></span>
+      </a>
+    </section>
+
+    <div class="ticker" aria-label="Technologies I work with">
+      <p class="ticker__label"><span class="status-dot" aria-hidden="true"></span>Now scanning</p>
+      <div class="ticker__window">
+        <ul class="ticker__track"><li>Python</li><li>scikit-learn</li><li>Random Forest</li><li>LightGBM</li><li>FastAPI</li><li>FAISS</li><li>RAG</li><li>Claude API</li><li>Docker</li><li>GitHub Actions</li><li>IoT sensors</li><li>JavaScript</li><li>PWA</li><li>Chart.js</li><li>Tailwind CSS</li><li>Figma</li><li>SQL</li><li>Git</li></ul>
+        <ul class="ticker__track" aria-hidden="true"><li>Python</li><li>scikit-learn</li><li>Random Forest</li><li>LightGBM</li><li>FastAPI</li><li>FAISS</li><li>RAG</li><li>Claude API</li><li>Docker</li><li>GitHub Actions</li><li>IoT sensors</li><li>JavaScript</li><li>PWA</li><li>Chart.js</li><li>Tailwind CSS</li><li>Figma</li><li>SQL</li><li>Git</li></ul>
+      </div>
+    </div>
+
+    <!-- ============================== About -->
+    <section class="section about" id="about" aria-labelledby="about-title">
+      <div class="container">
+        <header class="section-head">
+          <p class="eyebrow"><span class="eyebrow__index">01</span><span class="eyebrow__rule" aria-hidden="true"></span><span data-scramble>About</span></p>
+          <h2 class="section-title" id="about-title" data-split="words">From raw data <em>to working software.</em></h2>
+        </header>
+        <div class="bento" data-mount="about"></div>
+      </div>
+    </section>
+
+    <!-- ============================== Skills -->
+    <section class="section skills" id="skills" aria-labelledby="skills-title">
+      <div class="signal" aria-hidden="true"><span></span></div>
+      <div class="container">
+        <header class="section-head section-head--split">
+          <div>
+            <p class="eyebrow"><span class="eyebrow__index">02</span><span class="eyebrow__rule" aria-hidden="true"></span><span data-scramble>Skills</span></p>
+            <h2 class="section-title" id="skills-title" data-split="words">A toolkit backed by <em>evidence.</em></h2>
+          </div>
+          <p class="section-intro" data-reveal>Every skill below links to where I actually used it. Hover or tap a skill to see the proof.</p>
+        </header>
+        <div class="skills__board" data-mount="skills"></div>
+      </div>
+    </section>
+
+    <!-- ============================== Projects -->
+    <section class="section projects" id="projects" aria-labelledby="projects-title">
+      <div class="signal" aria-hidden="true"><span></span></div>
+      <div class="container">
+        <header class="section-head section-head--split">
+          <div>
+            <p class="eyebrow"><span class="eyebrow__index">03</span><span class="eyebrow__rule" aria-hidden="true"></span><span data-scramble>Selected work</span></p>
+            <h2 class="section-title" id="projects-title" data-split="words">Things I have trained, designed <em>and shipped.</em></h2>
+          </div>
+          <p class="section-intro" data-reveal>One research project in depth, then the AI services and products I have built and deployed. Every link goes to real code or a live demo.</p>
+        </header>
+        <div data-mount="featured"></div>
+        <div class="builds" data-mount="builds"></div>
+        <div class="more-work" data-mount="more-work"></div>
+      </div>
+    </section>
+
+    <!-- ============================== Experience -->
+    <section class="section experience" id="experience" aria-labelledby="experience-title">
+      <div class="signal" aria-hidden="true"><span></span></div>
+      <div class="container">
+        <header class="section-head section-head--split">
+          <div>
+            <p class="eyebrow"><span class="eyebrow__index">04</span><span class="eyebrow__rule" aria-hidden="true"></span><span data-scramble>Experience</span></p>
+            <h2 class="section-title" id="experience-title" data-split="words">Internship, research <em>and shipped products.</em></h2>
+          </div>
+          <p class="section-intro" data-reveal>An AI &amp; Cybersecurity internship, academic research, self-directed product engineering and three university clubs.</p>
+        </header>
+        <div class="timeline" data-mount="experience" data-timeline></div>
+      </div>
+    </section>
+
+    <!-- ============================== Education -->
+    <section class="section education" id="education" aria-labelledby="education-title">
+      <div class="signal" aria-hidden="true"><span></span></div>
+      <div class="container">
+        <header class="section-head">
+          <p class="eyebrow"><span class="eyebrow__index">05</span><span class="eyebrow__rule" aria-hidden="true"></span><span data-scramble>Education</span></p>
+          <h2 class="section-title" id="education-title" data-split="words">Foundations in <em>computer science.</em></h2>
+        </header>
+        <ol class="edu-list" data-mount="education"></ol>
+      </div>
+    </section>
+
+    <!-- ============================== Achievements -->
+    <section class="section achievements" id="achievements" aria-labelledby="achievements-title">
+      <div class="signal" aria-hidden="true"><span></span></div>
+      <div class="container">
+        <header class="section-head section-head--split">
+          <div>
+            <p class="eyebrow"><span class="eyebrow__index">06</span><span class="eyebrow__rule" aria-hidden="true"></span><span data-scramble>Achievements</span></p>
+            <h2 class="section-title" id="achievements-title" data-split="words">Milestones, workshops <em>and life beyond the screen.</em></h2>
+          </div>
+          <p class="section-intro" data-reveal>Academic results, campus leadership and the workshops, runs and matches that keep me learning.</p>
+        </header>
+        <div data-mount="achievements"></div>
+      </div>
+    </section>
+
+    <!-- ============================== Gallery -->
+    <section class="section gallery-section" id="gallery" aria-labelledby="gallery-title">
+      <div class="signal" aria-hidden="true"><span></span></div>
+      <div class="container">
+        <header class="section-head section-head--split">
+          <div>
+            <p class="eyebrow"><span class="eyebrow__index">07</span><span class="eyebrow__rule" aria-hidden="true"></span><span data-scramble>Gallery</span></p>
+            <h2 class="section-title" id="gallery-title" data-split="words">Moments <em>beyond the screen.</em></h2>
+          </div>
+          <p class="section-intro" data-reveal>Department life, workshops, club events, runs and football. Filter by category, then open any photo for the full view and its caption.</p>
+        </header>
+        <div class="gallery" data-mount="gallery"></div>
+      </div>
+    </section>
+
+    <!-- ============================== Contact -->
+    <section class="section contact" id="contact" aria-labelledby="contact-title">
+      <div class="signal" aria-hidden="true"><span></span></div>
+      <div class="contact__glow" aria-hidden="true"></div>
+      <div class="container">
+        <header class="section-head">
+          <p class="eyebrow"><span class="eyebrow__index">08</span><span class="eyebrow__rule" aria-hidden="true"></span><span data-scramble>Contact</span></p>
+          <h2 class="contact__title" id="contact-title" data-split="words">Let's turn data into decisions <em>people can trust.</em></h2>
+        </header>
+
+        <div class="contact__grid">
+          <div class="contact__channels" data-reveal>
+            <p class="contact__lede">I'm open to AI/ML roles, data projects and research collaborations. Email is the quickest way to reach me.</p>
+            <p class="contact__signal"><span class="status-dot" aria-hidden="true"></span>Channel open · based in Dhaka (GMT+6)</p>
+
+            <div class="email-card">
+              <a class="email-card__link" href="mailto:tarifulhoque347@gmail.com">tarifulhoque347@gmail.com</a>
+              <button class="email-card__copy" type="button" data-copy="tarifulhoque347@gmail.com">
+                <svg class="icon" aria-hidden="true"><use href="#i-copy"/></svg>
+                <span data-copy-label>Copy</span>
+              </button>
+            </div>
+
+            <ul class="channel-list">
+              <li>
+                <a class="channel" href="https://www.linkedin.com/in/tariful-hoque-582321259/" target="_blank" rel="noopener noreferrer">
+                  <svg class="icon" aria-hidden="true"><use href="#i-linkedin"/></svg>
+                  <span class="channel__name">LinkedIn</span>
+                  <span class="channel__meta">in/tariful-hoque-582321259</span>
+                  <svg class="icon channel__arrow" aria-hidden="true"><use href="#i-arrow-up-right"/></svg>
+                  <span class="sr-only">(opens in a new tab)</span>
+                </a>
+              </li>
+              <li>
+                <a class="channel" href="https://github.com/Majortarif" target="_blank" rel="noopener noreferrer">
+                  <svg class="icon" aria-hidden="true"><use href="#i-github"/></svg>
+                  <span class="channel__name">GitHub</span>
+                  <span class="channel__meta">@Majortarif</span>
+                  <svg class="icon channel__arrow" aria-hidden="true"><use href="#i-arrow-up-right"/></svg>
+                  <span class="sr-only">(opens in a new tab)</span>
+                </a>
+              </li>
+              <li>
+                <a class="channel" href="assets/cv/Tariful_Hoque_CV.pdf" download>
+                  <svg class="icon" aria-hidden="true"><use href="#i-file"/></svg>
+                  <span class="channel__name">Curriculum vitae</span>
+                  <span class="channel__meta">PDF · 2 pages</span>
+                  <svg class="icon channel__arrow" aria-hidden="true"><use href="#i-download"/></svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <form class="contact-form" name="contact" method="POST" data-contact-form novalidate data-reveal>
+            <p class="sr-only"><label>Leave this field empty <input name="_gotcha" tabindex="-1" autocomplete="off" /></label></p>
+
+            <div class="field">
+              <label for="cf-name">Your name</label>
+              <input id="cf-name" name="name" type="text" autocomplete="name" required maxlength="100" />
+              <p class="field__error" id="cf-name-error" aria-live="polite"></p>
+            </div>
+            <div class="field">
+              <label for="cf-email">Email address</label>
+              <input id="cf-email" name="email" type="email" autocomplete="email" required maxlength="200" />
+              <p class="field__error" id="cf-email-error" aria-live="polite"></p>
+            </div>
+            <div class="field">
+              <label for="cf-message">Message</label>
+              <textarea id="cf-message" name="message" rows="5" required minlength="10" maxlength="3000"></textarea>
+              <p class="field__error" id="cf-message-error" aria-live="polite"></p>
+            </div>
+
+            <div class="contact-form__foot">
+              <button class="btn btn--primary" type="submit" data-magnetic>
+                <span class="btn__label">Send message</span>
+                <svg class="icon icon--x" aria-hidden="true"><use href="#i-send"/></svg>
+              </button>
+              <p class="contact-form__status" role="status" aria-live="polite" data-form-status></p>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container site-footer__inner">
+      <p class="site-footer__name">Tariful Hoque</p>
+      <p class="site-footer__meta">© <span data-year>2026</span> Tariful Hoque. Designed and engineered from scratch with HTML, CSS and JavaScript.</p>
+      <a class="site-footer__top" href="#top">
+        Back to top
+        <svg class="icon" aria-hidden="true"><use href="#i-arrow-up"/></svg>
+      </a>
+    </div>
+  </footer>
+
+  <!-- Gallery lightbox -->
+  <dialog class="lightbox" data-lightbox aria-label="Photo viewer">
+    <figure class="lightbox__figure">
+      <img class="lightbox__img" alt="" data-lightbox-img />
+      <figcaption class="lightbox__caption">
+        <span class="lightbox__meta" data-lightbox-meta></span>
+        <span class="lightbox__title" data-lightbox-title></span>
+        <span class="lightbox__text" data-lightbox-text></span>
+      </figcaption>
+    </figure>
+    <button class="lightbox__btn lightbox__close" type="button" data-lightbox-close aria-label="Close photo viewer"><svg class="icon" aria-hidden="true"><use href="#i-x"/></svg></button>
+    <button class="lightbox__btn lightbox__prev" type="button" data-lightbox-prev aria-label="Previous photo"><svg class="icon" aria-hidden="true"><use href="#i-chevron-left"/></svg></button>
+    <button class="lightbox__btn lightbox__next" type="button" data-lightbox-next aria-label="Next photo"><svg class="icon" aria-hidden="true"><use href="#i-chevron-right"/></svg></button>
+  </dialog>
+
+  <noscript>
+    <div class="noscript">
+      <p>This portfolio uses JavaScript to show projects and experience. You can still
+        <a href="assets/cv/Tariful_Hoque_CV.pdf">download my CV</a>,
+        email <a href="mailto:tarifulhoque347@gmail.com">tarifulhoque347@gmail.com</a>,
+        or visit <a href="https://www.linkedin.com/in/tariful-hoque-582321259/">LinkedIn</a> and
+        <a href="https://github.com/Majortarif">GitHub</a>.</p>
+    </div>
+  </noscript>
+</body>
 </html>

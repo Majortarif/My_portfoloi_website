@@ -1,0 +1,230 @@
+/* =========================================================================
+   Motion system
+   One easing family (--ease-out for arrivals, --ease-in-out for travel),
+   three speeds, and staggering through --i / --wi / --ci / --d indexes.
+   Hidden start states only apply when JS is running (.js on <html>).
+   ========================================================================= */
+
+/* ---------------------------------------------------------- page load */
+.js [data-intro] {
+  opacity: 0;
+  transform: translateY(18px);
+}
+
+.js.is-loaded [data-intro] {
+  opacity: 1;
+  transform: none;
+  transition:
+    opacity 0.9s ease,
+    transform 1.1s var(--ease-out);
+  transition-delay: calc(var(--d) * 80ms + 150ms);
+}
+
+/* name: characters rise out of a blur, one after another */
+.c {
+  display: inline-block;
+}
+
+.js [data-intro-split] .c__i {
+  display: inline-block;
+  opacity: 0;
+  transform: translateY(0.35em);
+  filter: blur(12px);
+}
+
+.js.is-loaded [data-intro-split] .c__i {
+  opacity: 1;
+  transform: none;
+  filter: blur(0);
+  transition:
+    opacity 0.8s ease,
+    transform 1.2s var(--ease-out),
+    filter 0.9s ease;
+  transition-delay: calc(var(--d) * 80ms + var(--ci) * 38ms + 150ms);
+}
+
+.js .site-header {
+  transition:
+    transform 0.9s var(--ease-out),
+    background-color var(--dur) ease,
+    border-color var(--dur) ease;
+}
+
+.js:not(.is-loaded) .site-header {
+  transform: translateY(-100%);
+}
+
+.js .hero__field {
+  opacity: 0;
+  transition: opacity 2s ease 0.5s;
+}
+
+.js.is-loaded .hero__field {
+  opacity: 1;
+}
+
+/* ---------------------------------------------------------- scroll reveal */
+.js [data-reveal] {
+  opacity: 0;
+  transform: translateY(28px);
+  transition:
+    opacity 0.9s ease,
+    transform 1.1s var(--ease-out);
+  transition-delay: calc(var(--i, 0) * 90ms);
+}
+
+.js [data-reveal].is-in {
+  opacity: 1;
+  transform: none;
+}
+
+/* headings: each word slides up out of its own mask */
+.w {
+  display: inline-block;
+  overflow: hidden;
+  padding-bottom: 0.14em;
+  margin-bottom: -0.14em;
+  vertical-align: top;
+}
+
+em .w {
+  padding-right: 0.08em;
+  margin-right: -0.08em;
+}
+
+.w__i {
+  display: inline-block;
+}
+
+.js [data-split='words'] .w__i {
+  transform: translateY(112%);
+}
+
+.js [data-split='words'].is-in .w__i {
+  transform: none;
+  transition: transform 1.1s var(--ease-out) calc(var(--wi) * 45ms);
+}
+
+/* section label rule draws in */
+.js .section-head .eyebrow__rule {
+  transform: scaleX(0);
+  transition: transform 1s var(--ease-out) 0.2s;
+}
+
+.js .section-head.is-in .eyebrow__rule {
+  transform: scaleX(1);
+}
+
+/* "How I work" steps light up in order once */
+.bento__process.is-in .process__step {
+  animation: step-lit 1.5s ease;
+  animation-delay: calc(var(--i) * 0.16s + 0.35s);
+}
+
+/* ---------------------------------------------------------- keyframes */
+@keyframes ping {
+  0% { transform: scale(0.6); opacity: 0.9; }
+  100% { transform: scale(1.9); opacity: 0; }
+}
+
+@keyframes blink {
+  50% { opacity: 0; }
+}
+
+@keyframes flow {
+  to { stroke-dashoffset: -0.145; }
+}
+
+@keyframes pulse-ring {
+  0% { scale: 1; opacity: 0.55; }
+  100% { scale: 1.9; opacity: 0; }
+}
+
+@keyframes drift {
+  from { translate: 0 0; }
+  to { translate: -6vmax 5vmax; }
+}
+
+@keyframes halo {
+  from { scale: 1; opacity: 0.75; }
+  to { scale: 1.06; opacity: 1; }
+}
+
+@keyframes scroll-cue {
+  0% { transform: scaleY(0); transform-origin: top; }
+  45% { transform: scaleY(1); transform-origin: top; }
+  55% { transform: scaleY(1); transform-origin: bottom; }
+  100% { transform: scaleY(0); transform-origin: bottom; }
+}
+
+@keyframes step-lit {
+  0% { border-color: var(--line); }
+  30% { border-color: var(--accent); background-color: var(--accent-soft); }
+  100% { border-color: var(--line); }
+}
+
+@keyframes flow-glow {
+  0%, 22%, 100% { border-color: var(--line); color: var(--text); }
+  8% { border-color: var(--accent-line); color: var(--accent); }
+}
+
+@keyframes fade-up {
+  from { opacity: 0; transform: translateY(6px); }
+}
+
+@keyframes fade-in {
+  from { opacity: 0; }
+}
+
+@keyframes zoom-in {
+  from { opacity: 0; scale: 0.96; }
+}
+
+/* ---------------------------------------------------------- reduced motion
+   Everything is shown in its final state; nothing moves on its own. */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    animation-delay: 0s !important;
+    transition-duration: 0.001ms !important;
+    transition-delay: 0s !important;
+  }
+
+  .js [data-intro],
+  .js [data-reveal],
+  .js [data-intro-split] .c__i,
+  .js [data-split='words'] .w__i {
+    opacity: 1;
+    transform: none;
+    filter: none;
+  }
+
+  .js:not(.is-loaded) .site-header {
+    transform: none;
+  }
+
+  .pipe-edge__base {
+    stroke-dashoffset: 0;
+  }
+
+  .pipe-node {
+    opacity: 1;
+    scale: 1;
+  }
+
+  .pipe-edge__flow {
+    opacity: 0.5;
+  }
+
+  .mini .terminal__line {
+    opacity: 1;
+    translate: 0 0;
+  }
+}

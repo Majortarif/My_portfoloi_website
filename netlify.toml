@@ -1,0 +1,18 @@
+# Netlify: static site, no build step. Drag the folder (or its zip) onto
+# app.netlify.com/drop, or connect the repo with publish directory ".".
+[build]
+  publish = "."
+  command = "echo 'Static site: no build step'"
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Content-Type-Options = "nosniff"
+    X-Frame-Options = "SAMEORIGIN"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    Permissions-Policy = "camera=(), microphone=(), geolocation=()"
+
+[[headers]]
+  for = "/assets/*"
+  [headers.values]
+    Cache-Control = "public, max-age=86400"
