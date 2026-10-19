@@ -917,3 +917,42 @@
     translate: 0 0;
   }
 }
+
+/* ---------------------------------------------------------- hero: 3D forest button */
+.btn--forest {
+  gap: 10px;
+  border-color: var(--accent-line);
+  background:
+    linear-gradient(rgba(8, 14, 24, 0.85), rgba(8, 14, 24, 0.85)) padding-box,
+    linear-gradient(110deg, rgba(62, 224, 255, 0.9), rgba(74, 222, 128, 0.7), rgba(79, 139, 255, 0.9)) border-box;
+  border: 1px solid transparent;
+  color: var(--text);
+  box-shadow: 0 0 28px -8px var(--accent-glow);
+}
+
+.btn--forest .icon {
+  color: var(--ok);
+}
+
+.btn--forest:hover {
+  box-shadow: 0 0 36px -6px rgba(62, 224, 255, 0.55);
+}
+
+.btn__ping {
+  position: relative;
+  width: 7px;
+  height: 7px;
+  margin-right: -2px;
+  border-radius: 50%;
+  background: var(--ok);
+}
+
+.btn__ping::after {
+  content: '';
+  position: absolute;
+  inset: -4px;
+  border: 1px solid var(--ok);
+  border-radius: 50%;
+  opacity: 0;
+  animation: ping 2.4s var(--ease-out) infinite;
+}

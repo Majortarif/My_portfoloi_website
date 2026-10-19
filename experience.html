@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>The Signal Forest — Tariful Hoque</title>
+  <meta name="description" content="Walk a 3D night-forest trail through Tariful Hoque's projects, research, experience and photos. Built with Three.js." />
+  <meta name="theme-color" content="#04070d" />
+  <meta name="color-scheme" content="dark" />
+  <meta property="og:title" content="The Signal Forest — Tariful Hoque" />
+  <meta property="og:description" content="A 3D night-forest trail through my projects, research and experience." />
+  <meta property="og:image" content="assets/img/og-image.jpg" />
+  <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@300..700&amp;family=Geist+Mono:wght@400;500&amp;family=Instrument+Serif:ital@0;1&amp;display=swap" />
+  <link rel="stylesheet" href="css/forest.css" />
+  <script type="importmap">
+    {
+      "imports": {
+        "three": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js",
+        "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/"
+      }
+    }
+  </script>
+  <script type="module" src="js/forest/main.js"></script>
+</head>
+<body>
+  <a class="skip" href="index.html">Skip the 3D experience: open the classic portfolio</a>
+
+  <canvas class="scene" data-scene aria-label="3D forest trail. Use the chapter list or the arrow keys to move between stops."></canvas>
+
+  <div class="loader" data-loader>
+    <p class="loader__eyebrow">Tariful Hoque</p>
+    <p class="loader__title">Entering the <em>Signal Forest</em></p>
+    <div class="loader__bar"><span data-loader-bar></span></div>
+    <p class="loader__text" data-loader-text>Loading…</p>
+  </div>
+
+  <header class="hud">
+    <a class="hud__brand" href="index.html"><span class="hud__mark">TH</span><span class="hud__name">Tariful Hoque</span></a>
+    <p class="hud__where" data-where aria-live="polite">01 · Trailhead</p>
+    <a class="hud__classic" href="index.html">Classic site <span aria-hidden="true">↗</span></a>
+  </header>
+
+  <nav class="rail" aria-label="Trail stops"><ol data-rail></ol></nav>
+
+  <article class="card" data-card aria-live="polite"></article>
+
+  <p class="hint" data-hint><span class="hint__mouse" aria-hidden="true"></span>Scroll, swipe or press ↓ to walk the trail</p>
+
+  <section class="fallback" data-fallback hidden>
+    <p class="fb__eyebrow">The Signal Forest</p>
+    <h1>Your browser can't show the 3D trail.</h1>
+    <p>Here are the stops as a list. The <a href="index.html">classic portfolio</a> has everything in full.</p>
+    <ol class="fb__list" data-fallback-list></ol>
+  </section>
+
+  <noscript>
+    <p class="noscript">The 3D trail needs JavaScript. Visit the <a href="index.html">classic portfolio</a> instead.</p>
+  </noscript>
+</body>
+</html>

@@ -10,6 +10,7 @@
   <img src="https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white" alt="HTML5">
   <img src="https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white" alt="CSS3">
   <img src="https://img.shields.io/badge/JavaScript-ES_modules-F7DF1E?style=flat-square&logo=javascript&logoColor=black" alt="JavaScript ES modules">
+  <img src="https://img.shields.io/badge/Three.js-r160_WebGL-000000?style=flat-square&logo=threedotjs&logoColor=white" alt="Three.js r160 WebGL">
   <img src="https://img.shields.io/badge/framework-none-555?style=flat-square" alt="No framework">
   <img src="https://img.shields.io/badge/build_step-zero-555?style=flat-square" alt="Zero build step">
   <img src="https://img.shields.io/badge/responsive-360px_→_4K-0A6782?style=flat-square" alt="Responsive">
@@ -20,6 +21,7 @@
 <p align="center">
   <b>
   <a href="https://myupdatedportfoloiwebsite.netlify.app/">Open the site</a> ·
+  <a href="#-the-signal-forest-3d">3D forest</a> ·
   <a href="#-highlights">Highlights</a> ·
   <a href="#-screenshots">Screenshots</a> ·
   <a href="#-featured-work">Featured work</a> ·
@@ -33,14 +35,30 @@
 
 The personal portfolio of **Tariful Hoque**, a Computer Science graduate from East West University (April 2026) and IT Intern in the AI Integration & Cybersecurity wing at YSSE. It brings together machine-learning research, AI services, product prototypes, experience, a captioned photo gallery and an ATS-friendly CV in one fast, static site.
 
-Everything is hand-written **HTML, CSS and vanilla JavaScript**: no framework, no bundler, no `npm install`. Upload the folder and it is live.
+Everything is hand-written **HTML, CSS and vanilla JavaScript**: no framework, no bundler, no `npm install`. Upload the folder and it is live. Alongside the classic site there is **The Signal Forest**, a 3D night-forest trail through the same content, built with Three.js.
 
-<img src="docs/screenshots/hero.webp" width="100%" alt="Hero: Tariful Hoque in large type, a rotating radar with skill blips, the role line and buttons for projects, CV and contact.">
+<img src="docs/screenshots/hero.webp" width="100%" alt="Hero: Tariful Hoque in large type, a rotating radar with skill blips, the role line and buttons for projects, the 3D forest, CV and contact.">
+
+## 🌲 The Signal Forest (3D)
+
+> A portfolio should feel less like a résumé and more like an experience.
+
+Press **Enter the 3D forest** on the hero (or open [`experience.html`](https://myupdatedportfoloiwebsite.netlify.app/experience.html)) and walk a night trail through ten stops: a trailhead gate, the *Roots* tree (education), the Air Quality radar grove, a DocuSense embedding cloud, the AgriCycle field, a workshop of product screens, the YSSE basecamp fire, orbiting skill families, a clearing of photos and a portal to contact.
+
+<a href="https://myupdatedportfoloiwebsite.netlify.app/experience.html"><img src="docs/screenshots/forest.webp" width="100%" alt="Four stops of the 3D forest: the trailhead gate, the air-quality radar grove, the YSSE campfire and the contact portal."></a>
+
+| | |
+|---|---|
+| 🚶 **Walk** | Scroll, swipe or use the arrow keys; the camera follows a spline trail and settles at each stop. The rail and *Next stop* buttons jump anywhere. |
+| 🧭 **Read** | Each stop opens a glass card with the real content (same `js/data` files as the classic site), placed on the side away from the landmark. |
+| ✨ **Scene** | ~1,400 instanced low-poly pines, fireflies, stars, moonlight, fog, sonar rings and an Unreal bloom pass on desktop. Layout is seeded, so the forest is the same on every visit. |
+| ♿ **Fallbacks** | Deep links like `experience.html#air-quality`, reduced-motion support, a lighter scene on phones, and a plain list when WebGL is unavailable. |
 
 ## ✨ Highlights
 
 | | |
 |---|---|
+| 🌲 **3D Signal Forest** | A Three.js night-forest trail through the whole portfolio, one landmark per chapter (see above). |
 | 📡 **"Ultrasonic" hero** | A radar with a rotating sweep, sonar pulses and skill blips that light up as the beam passes, a scanline, a typed *currently…* line and a particle field carrying the 7 sensor readings of the air-quality model. |
 | 🔊 **Signal details** | A *Now scanning* tech ticker, oscilloscope-wave dividers between sections, and a sonar ping wherever you click. |
 | 🧠 **Featured research** | Air Quality Prediction: an animated, hover-traceable model pipeline, the real numbers (62,188 readings, time-ordered R² 0.9933) and a live screenshot. |
@@ -101,13 +119,14 @@ flowchart LR
 | `js/motion/` | Particle field, scroll reveals, split-text and scramble effects, cursor effects, and `sonar.js` (pings, typer, cycler, tilt, radar pause) |
 | `css/` | Design tokens and reset → layout → components → sections → motion → `sonar.css` (the ultrasonic layer) |
 
-**Tech:** HTML5 · CSS3 (custom properties, `sin()`/`cos()` placement, conic gradients, CSS columns) · JavaScript ES modules · IntersectionObserver · Canvas 2D · `<dialog>` · Google Fonts (Geist, Geist Mono, Instrument Serif) · Lucide-style inline SVG icons · Netlify.
+**Tech:** Three.js r160 (WebGL, InstancedMesh, UnrealBloomPass) · HTML5 · CSS3 (custom properties, `sin()`/`cos()` placement, conic gradients, CSS columns) · JavaScript ES modules · IntersectionObserver · Canvas 2D · `<dialog>` · Google Fonts (Geist, Geist Mono, Instrument Serif) · Lucide-style inline SVG icons · Netlify.
 
 ## 📁 Project structure
 
 ```text
 My_portfoloi_website/
-├── index.html            # page shell, meta tags, icon sprite
+├── index.html            # classic site: page shell, meta tags, icon sprite
+├── experience.html       # The Signal Forest (3D trail)
 ├── 404.html
 ├── netlify.toml          # headers, caching, no build step
 ├── robots.txt · sitemap.xml · site.webmanifest
@@ -118,12 +137,14 @@ My_portfoloi_website/
 ├── css/
 │   ├── base.css · layout.css · components.css
 │   ├── sections.css · motion.css
-│   └── sonar.css         # radar, ticker, dividers, gallery, pings
+│   ├── sonar.css         # radar, ticker, dividers, gallery, pings
+│   └── forest.css        # 3D trail overlay: card, rail, loader
 ├── js/
 │   ├── main.js           # mounts sections, then behaviour and motion
 │   ├── data/             # ✏️ edit these to update the site
 │   ├── components/
 │   ├── motion/
+│   ├── forest/           # Three.js scene: world, stations, chapters, overlay
 │   └── lib/
 └── docs/                 # README banner + screenshots (not used by the site)
 ```
