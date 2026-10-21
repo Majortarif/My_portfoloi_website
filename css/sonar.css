@@ -998,3 +998,13 @@
   color: var(--text);
   font-variant-numeric: tabular-nums;
 }
+
+/* a visit arrived while the page is open */
+.hero__visits.is-bumped {
+  animation: visit-bump 0.9s var(--ease-out);
+}
+
+@keyframes visit-bump {
+  0% { box-shadow: 0 0 0 0 rgba(62, 224, 255, 0.55); border-color: var(--accent); }
+  100% { box-shadow: 0 0 0 12px rgba(62, 224, 255, 0); }
+}
