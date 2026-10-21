@@ -67,6 +67,7 @@ Press **Enter the 3D forest** on the hero (or open [`experience.html`](https://m
 | 🗂️ **Projects** | AgriCycle, DocuSense RAG, CareerPilot AI, EcoBin 2.0 and Pulse with live demos and source links, plus smaller work. 3D tilt on hover. |
 | 🧭 **Experience timeline** | YSSE internship (current role), AI & product engineering, capstone research and three campus clubs, with a rail that draws as you scroll. |
 | 📸 **Gallery** | 20 captioned photos in 5 categories with filters, a masonry wall, HUD hover frames and a lightbox with keyboard arrows and swipe. |
+| 👁 **Visit counter** | A *portfolio visits* chip in the hero, counted once per browser per day through the free [Abacus](https://abacus.jasoncameron.dev) API. Local testing never adds visits, and the chip stays hidden if the API is down. |
 | 📄 **ATS-friendly CV** | One-click download of a 2-page, text-based PDF CV. |
 | ♿ **Accessible by default** | Semantic landmarks, skip link, visible focus, keyboard-operable menu, filters and viewer. Under `prefers-reduced-motion` everything stops and renders in its final state. |
 | ⚡ **Fast** | WebP images with lazy loading, no runtime dependencies, Google Fonts only. |

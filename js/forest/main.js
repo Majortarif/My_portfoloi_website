@@ -4,6 +4,7 @@ import { OutputPass } from 'three/addons/postprocessing/OutputPass.js'
 import { RenderPass } from 'three/addons/postprocessing/RenderPass.js'
 import { UnrealBloomPass } from 'three/addons/postprocessing/UnrealBloomPass.js'
 import { $, html, mount } from '../lib/dom.js'
+import { recordVisit } from '../lib/visits.js'
 import { chapters } from './chapters.js'
 import { initOverlay } from './overlay.js'
 import { buildStation } from './stations.js'
@@ -42,6 +43,7 @@ function fallback() {
 }
 
 async function start() {
+  recordVisit().catch(() => {}) // the forest counts as a portfolio visit too
   const setLoad = (p, text) => {
     $('[data-loader-bar]').style.transform = `scaleX(${p})`
     if (text) $('[data-loader-text]').textContent = text

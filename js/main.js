@@ -14,6 +14,7 @@ import { initIntro, initReveal } from './motion/reveal.js'
 import { initScroll } from './motion/scroll.js'
 import { initScramble, initSplitText } from './motion/text.js'
 import { initCycler, initPing, initRadar, initTilt, initTyper } from './motion/sonar.js'
+import { initVisits } from './lib/visits.js'
 
 const sections = {
   about: renderAbout,
@@ -36,6 +37,7 @@ initMobileMenu()
 initActiveSection()
 initContactForm()
 initCopy()
+initVisits()
 
 // 3. Motion (text is split before reveals are observed)
 initSplitText()
